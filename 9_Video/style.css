@@ -1,0 +1,14 @@
+/* . means class */
+
+.red{
+    background-color: red;
+}
+
+.bg-yellow{
+    color: white;
+}
+/* # means id  */
+
+#firstdiv{
+    background-color: red;
+}

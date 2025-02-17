@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            /* Ocuupies whote screen length */
+            /* width: 100vw;      */
+            width: 80vw;
+            height: 10vw;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            /* Ocuupies whote screen length */
+            /* width: 100vw;      */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 16px;
+            background-color: aquamarine;
+        }
+        
+        /* HTML is the root element  */
+
+        .container > div{
+            /* Font size changes to double */
+            /* font-size: 2em; */
+            font-size: 2rem;
+            /* Parent ki 50% width */
+            width: 50%;
+        }
+
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            background-color: red;
+            color:yellow;
+            font-size: 22px;
+            /* width: 100vmin; */
+            width:80vw;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis soluta architecto molestiae unde fugiat
+            inventore reiciendis similique voluptatum, distinctio rerum nobis aliquid fuga quisquam incidunt nostrum quidem
+            quam? Praesentium illo vitae, sint natus temporibus officiis maiores voluptas amet cupiditate omnis sapiente
+            excepturi ullam nam nisi nemo facilis totam? Sapiente doloribus eius pariatur. Nulla, delectus voluptate!
+
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, praesentium? Qui fugiat corporis sint porro, dignissimos nobis rem delectus harum temporibus adipisci nesciunt in deserunt perferendis vel laudantium soluta nam?
+            </div>
+        </div>
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+
+</html>

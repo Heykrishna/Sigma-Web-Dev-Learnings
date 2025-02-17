@@ -1,0 +1,13 @@
+/* Paragraph is a block element and Anchor tag is an inline element */
+
+p {
+    background-color: aquamarine;
+}
+
+a {
+    background-color: rgb(226, 36, 36);
+}
+
+div {
+    background-color: yellow;
+}

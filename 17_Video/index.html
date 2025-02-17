@@ -1,0 +1,108 @@
+<!-- CSS selctors allow us to choose specific element and apply style to them  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element selector */
+
+        /* div{
+            background-color: red;
+        } */
+
+        /* Class Selector */
+
+        .red{
+            background-color: red;
+        }
+
+        /* ID Selector */
+
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector */
+
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendant Selector */
+
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Universal Selector */
+
+        *{
+            margin:5;
+            padding: 0;
+        }
+
+        /* Pseuso Selector */
+
+        a:visited{
+            color: red;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: yellow;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+
+        /* Attribute Selector  */
+
+        [data-x=a]{
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </div>
+
+    <div class="red">
+        I am a div
+
+        <!-- Direct child pe child selector kaam krega -->
+        <p>I am a para inside div</p> 
+
+        <article>
+            <p>I am para inside article inside div</p>
+        </article>
+
+    </div>
+    
+    <div id="green">I am another div</div>
+
+    <a href="https://google.com">Go to Google</a> 
+
+    <a href="https://snapchat.com">Go to Snapchat</a> 
+
+    <p data-x="a">Hey you are end of line</p>
+
+</body>
+</html>

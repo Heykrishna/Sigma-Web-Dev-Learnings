@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS More on selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        .box::first-line{
+            color: blue;
+        }
+
+        .boxes *{
+            color: blueviolet;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        [data-color="primary"]{
+            margin-top: 40px;
+        }
+
+        .box:nth-child(even){
+            background-color: aquamarine;
+        }
+
+        .boxes::before{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            content: "Harry is good";
+        }
+
+        .boxes::after{
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            content:"That's an end";
+        }
+
+        .box::first-letter{
+            color: rgb(122, 56, 220);
+            font-size: 20px;
+        }
+
+        ::selection{
+            color: black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni incidunt sunt ea impedit voluptatem asperiores nulla temporibus nobis distinctio alias culpa provident quae ab, mollitia vitae rerum commodi, facilis eum debitis ex dolore. Quisquam rerum illum voluptates officia iste impedit veritatis ipsum placeat nostrum ad, ducimus quae voluptatem qui at. Nihil explicabo, ad vitae voluptas nulla sint illum a reiciendis dolorum dolorem quibusdam ipsum repellendus alias possimus eveniet nam. Officia, in? Obcaecati natus, necessitatibus ratione cum illum cupiditate nulla veniam maxime consequuntur odio. Ipsam placeat in illo, quibusdam veritatis doloremque recusandae? Commodi expedita voluptatem fuga doloremque, ratione neque dolorem nihil ullam voluptates quos quia doloribus veniam quas illo reprehenderit sed. Sequi, ex numquam similique, magnam non nobis velit perferendis dicta veniam porro provident. Qui illo at quibusdam, quis sunt temporibus rem sint architecto quos reiciendis corporis id. Aut minus veritatis quos. Aperiam natus ad eius enim perspiciatis neque officiis sunt dolorem excepturi labore ratione expedita quam quasi, ullam impedit doloremque, similique fugit magni. Totam sequi aliquid adipisci perspiciatis nostrum accusantium optio ratione provident rem assumenda impedit officia vero culpa, dolorum animi possimus fugiat dolores nobis ad, laudantium a explicabo voluptas. Distinctio, sunt in. Ad tempora nam et nulla, facere esse.</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+
+        <input type="text" placeholder="Enter your name">
+    </div>
+</body>
+</html>

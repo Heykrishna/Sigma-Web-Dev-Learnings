@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolor Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=SUSE:wght@100..800&display=swap');
+    </style>
+    <style>
+        :root{
+            --primary-color: #832fb4fc;
+            --text-color: white;
+            --seconday-color:#ca8dedfc;
+        }
+
+        body{
+            background-color: var(--seconday-color);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 30px;
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            color: var(--text-color);
+
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

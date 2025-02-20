@@ -17,3 +17,7 @@ let obj = {
 
 console.log('obj', obj);
 
+
+for (const iterator of arr){
+    console.log(iterator);
+}

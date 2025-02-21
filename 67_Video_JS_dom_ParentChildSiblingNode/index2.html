@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Wellness</title>
+    <style>
+        body {
+            background-color: white; /* Changed background color to white */
+            font-family: ui-sans-serif, Arial, sans-serif;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: 10px auto; /* Added margin-top and margin-bottom */
+            padding: 20px;
+            background-color: oklch(0.705 0.213 47.604); /* Changed form background color */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            font-size: 30px;
+            color: white; /* Changed text color to white */
+            margin: 20px 0; /* Added margin-top and margin-bottom */
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            border-bottom: 2px solid white; /* Changed border color to white */
+            padding-bottom: 30px; /* Increased padding-bottom for more space */
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: white; /* Changed label color to white */
+        }
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: oklch(0.967 0.003 264.542); /* Light color with translucency */
+            color: #333;
+            appearance: none; /* Remove default arrow */
+            -webkit-appearance: none; /* Remove default arrow for Safari */
+            -moz-appearance: none; /* Remove default arrow for Firefox */
+            background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polygon points="0,0 10,0 5,5" fill="%23333"/></svg>'); /* Custom arrow */
+            background-repeat: no-repeat;
+            background-position: calc(100% - 20px) center; /* Position the arrow */
+            background-size: 8px; /* Size of the arrow */
+        }
+        .form-group select:focus {
+            border-color: white; /* Change border color on focus */
+            border-width: 2px; /* Make the border thicker */
+            outline: none; /* Remove default outline */
+            color: #333; /* Ensure text color remains readable */
+        }
+        .form-group select option {
+            color: #333; /* Ensure text color remains readable */
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 13px;
+            background-color: white; /* Changed button background color to white */
+            color: oklch(0.705 0.213 47.604); /* Changed button text color */
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 40px; /* Added margin-top for more space */
+        }
+        .submit-button:hover {
+            background-color: oklch(0.705 0.213 37.604); /* Changed hover background color */
+            color: white; /* Changed hover text color to white */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Mental Wellness</h2>
+        <form>
+            <div class="form-group">
+                <label for="sleep">Sleep* Frequency of sleep disturbances</label>
+                <select id="sleep" name="sleep">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="appetite">Appetite* - Changes in appetite</label>
+                <select id="appetite" name="appetite">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="interest">Interest* - Loss of interest in activities</label>
+                <select id="interest" name="interest">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fatigue">Fatigue* - Feelings of fatigue or low energy</label>
+                <select id="fatigue" name="fatigue">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="worthlessness">Worthlessness* - Feelings of worthlessness or excessive guilt</label>
+                <select id="worthlessness" name="worthlessness">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="concentration">Concentration* - Difficulty concentrating</label>
+                <select id="concentration" name="concentration">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="agitation">Agitation* - Physical agitation</label>
+                <select id="agitation" name="agitation">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="suicidal">Suicidal Ideation* - Thoughts of self-harm or suicide</label>
+                <select id="suicidal" name="suicidal">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sleepDisturbance">Sleep Disturbance* - Issues with sleeping</label>
+                <select id="sleepDisturbance" name="sleepDisturbance">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="aggression">Aggression* - Feelings of aggression</label>
+                <select id="aggression" name="aggression">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="panic">Panic Attacks* - Experiencing panic attacks</label>
+                <select id="panic" name="panic">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hopelessness">Hopelessness* - Feelings of hopelessness</label>
+                <select id="hopelessness" name="hopelessness">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="restlessness">Restlessness* - Feelings of restlessness</label>
+                <select id="restlessness" name="restlessness">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="lowEnergy">Low Energy* - Lack of energy</label>
+                <select id="lowEnergy" name="lowEnergy">
+                    <option value="never">Never</option>
+                    <option value="always">Always</option>
+                    <option value="often">Often</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="notAtAll">Not at all</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="depressionState">Depression State* - Overall depression state</label>
+                <select id="depressionState" name="depressionState">
+                    <option value="noDepression">No depression</option>
+                    <option value="mild">Mild</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="severe">Severe</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
